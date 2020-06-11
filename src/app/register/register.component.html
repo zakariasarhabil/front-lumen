@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+
+<div class="kotak_login">
+
+    <h1>Register</h1>
+
+    <form>
+        <div class="container">
+            <label for="email"><b>name</b></label>
+            <input [(ngModel)]="registerUserdata.name" class="form_login" type="text" placeholder="Username . . ." name="name" required>
+
+            <label for="psw"><b>Email</b></label>
+            <input [(ngModel)]="registerUserdata.email" class="form_login" type="email" placeholder="Email . . ." name="email" required>
+
+            <label for="psw-repeat"><b>Password</b></label>
+            <input [(ngModel)]="registerUserdata.password" class="form_login" type="password" placeholder="Password . . ." name="password" required>
+
+
+            <button (click)="registerUser()" type="submit" class="tombol_login">Register</button>
+        </div>
+    </form>
+
+</div>
